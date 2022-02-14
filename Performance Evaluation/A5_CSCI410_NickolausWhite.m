@@ -96,7 +96,7 @@ fprintf('%s\n\n','%');
 
 
 %--------------------------------------------------------------------
-% PART TWO - Bayesian Classifier
+% PART TWO - K-nearest Neighbor
 %--------------------------------------------------------------------
 
 
@@ -178,10 +178,10 @@ for i=1:40
 end
 
 figure('NumberTitle', 'off', 'Name', 'Figure 1: Bayesian Classifier');
-confusionchart(species, predictKnn);
+confusionchart(species, predictBayesian);
 
 figure('NumberTitle', 'off', 'Name', 'Figure 2: K-Nearest Neighbor');
-confusionchart(species, predictBayesian);
+confusionchart(species, predictKnn);
 
 
 %--------------------------------------------------------------------
